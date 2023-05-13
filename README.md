@@ -36,7 +36,7 @@ type FileConfig struct {
 	DaemonDiscard bool          `json:"daemon_discard"` // 写通道舍弃. 默认false不舍弃!
 	BufferBytes   int           `json:"buffer_bytes"`   // 写缓存大小. 默认256K
 	BufferFlush   time.Duration `json:"buffer_flush"`   // 写刷新周期. 默认15s
-	RecordLength  int           `json:"record_length"`  // 记录缓存大小. 默认1024字节
+	RecordLength  int           `json:"record_length"`  // 记录缓存大小. 默认2048字节
 	RecordFactor  int           `json:"record_factor"`  // 记录缓存重用. 默认4,即小于N*RecordFactor可重用.
 }
 ```

@@ -34,7 +34,7 @@ const (
 	defaultHeaderLength = 26 // "2006/01/02 15:04:05 ERROR "
 	defaultBufferBytes  = 256 * 1024
 	defaultBufferFlush  = 15 * time.Second
-	defaultRecordLength = 1024
+	defaultRecordLength = 2048
 	defaultRecordFactor = 4
 )
 
